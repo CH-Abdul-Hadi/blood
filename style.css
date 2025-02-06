@@ -1,0 +1,96 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(240, 30, 30, 0.685) rgba(255, 255, 255, 0.904);
+  scrollbar-gutter: stable;
+}
+
+/* color */
+.colorRed{
+    background-color: #9C141B !important;
+}
+
+.hero {
+  background-image: url(./image/slider-image4.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 !important; 
+}
+
+.heroText {
+  color: white;
+  margin-top: 20%;
+  margin-left: -10%;
+}
+
+.ideaText,
+.services {
+  height: 100vh;
+}
+.ideaText img {
+  margin-top: 20%;
+  /* margin-left: 10%; */
+}
+
+
+.services .card .btn {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Optional: Prevent hover state flicker */
+  }
+  
+  .services .card:hover .btn {
+    opacity: 1;
+    pointer-events: auto; 
+  }
+  .services .card {
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .services .card:hover {
+    transform: translateY(-5px);
+  }
+
+  
+    .hero {
+    position: relative;
+    z-index: 1;
+  }
+
+  .secondNav{
+    position: sticky;
+  }
+@media (max-width: 768px) {
+    .heroText {
+      margin-top: 40% !important;
+      margin-left: 0 !important;
+      text-align: center !important;
+    }
+    
+    .heroText h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  /* hero animation */
+  animate__fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+  }
+/* idea animation  */
+  .animate__fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
+  }
