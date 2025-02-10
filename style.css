@@ -12,6 +12,8 @@ body {
   scrollbar-gutter: stable;
 }
 
+
+
 /* color */
 .colorRed{
     background-color: #9C141B !important;
@@ -82,8 +84,10 @@ body {
     }
   }
 
+
+  
   /* hero animation */
-  animate__fadeInUp {
+  .animate__fadeInUp {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
     animation-duration: 2s;
@@ -94,3 +98,20 @@ body {
     animation-name: fadeInLeft;
     animation-duration: 2s;
   }
+
+  
+/* contact */
+  input{
+    border: none;
+    border-bottom: 1px solid #9C141B !important;
+    background-color: transparent;
+  }
+  input:focus{
+    outline: none;
+    background-color: transparent;
+  }
+  input::placeholder{
+    color: #000000;
+  }
+
+
