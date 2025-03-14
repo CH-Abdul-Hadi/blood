@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- seo -->
+    <!-- SEO -->
     <meta
       name="description"
       content="BD & DC - Blood Disease & Daycare Clinic offering specialized healthcare services including daycare, OPD, laboratory services and apheresis in [Location]. Expert medical care for blood disorders."
@@ -14,7 +14,7 @@
     />
     <meta name="author" content="BD & DC Clinic" />
     <meta name="robots" content="index, follow" />
-    <!-- seo graph -->
+    <!-- Open Graph -->
     <meta
       property="og:title"
       content="BD & DC - Blood Disease & Daycare Clinic"
@@ -25,64 +25,44 @@
     />
     <meta property="og:image" content="./image/favicon.jpg" />
     <meta property="og:url" content="https://bdanddc.vercel.app/" />
-    <!-- links -->
+    <!-- Links -->
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./image/favicon.jpg" type="image/x-icon" />
-    <!-- bootstrap -->
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <title>Blood</title>
+    <title>BD & DC - Blood Disease & Daycare Clinic</title>
   </head>
-
   <body>
-    <!-- header -->
+    <!-- Header -->
     <header>
-
-      <!-- first nav -->
-      <nav class="navbar navbar-light colorRed">
-        <div class="container">
-          <a class="navbar-brand" href="#">
+      <nav class="navbar navbar-expand-lg colorRed secondNav navbarMain">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center p-5" href="#">
             <img
               src="./image/favicon.jpg"
-              alt=""
+              alt="BDC Logo"
               width="90"
               height="84"
-              class="d-inline-block align-text-top rounded-circle"
+              class="d-inline-block rounded-circle"
             />
-            <span
-              class="text-uppercase text-white position-relative"
-              style="font-size: 20px; font-weight: bold; top: 16px; left: 12px"
-            >
-              BD & DC
-            </span>
-            <span
-              class="navLogoText text-white text-capitalize position-relative"
-              style="top: 41px; left: -77px; font-size: 12px"
-              >Blood Disease & Daycare Clinic</span
-            >
+            <div class="ms-2">
+              <span
+                class="text-uppercase text-white fw-bold"
+                style="font-size: 38px"
+                >BDC</span
+              >
+              <span
+                class="navLogoText text-white text-capitalize d-block"
+                style="font-size: 12px"
+                >Blood Disease & Daycare Clinic</span
+              >
+            </div>
           </a>
-          <button
-            class="btn btn-outline-danger"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            Appointment
-          </button>
-        </div>
-      </nav>
-      <!-- second nav -->
-      <nav
-        class="navbar navbar-expand-lg border m-0 p-0 rounded-pill mx-auto bg-danger"
-        style="width: 28%"
-      >
-        <div class="container">
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
           <button
             class="navbar-toggler"
             type="button"
@@ -92,12 +72,10 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-bars text-white"></i>
           </button>
-          <!-- navbar list -->
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <!-- home -->
+            <ul class="navbar-nav ms-auto p-5" >
               <li class="nav-item">
                 <a
                   class="nav-link text-white active"
@@ -106,43 +84,33 @@
                   >Home</a
                 >
               </li>
-
-              <!-- services -->
               <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#service">Services</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
                 <a
-                  href="#service"
-                  class="list-group-item bg-danger text-white border-0"
-                  >Services</a
+                  class="nav-link text-white dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-              </li>
-              <!-- resourses  -->
-              <li class="nav-item">
-                <div class="dropdown">
-                  <a
-                    class="btn btn-danger dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    resourses
-                  </a>
-
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!-- contact -->
-              <li class="nav-item">
+                  Resources
+                </a>
+                <ul class="dropdown-menu" disabled>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li> -->
+              <!-- <li class="nav-item">
                 <button
-                  class="btn btn-danger"
+                  class="btn btn-outline-danger mx-2"
                   type="button"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasRight"
@@ -150,336 +118,256 @@
                 >
                   Contact
                 </button>
+              </li> -->
+              <li class="nav-item">
+                <button
+                  class="btn btn-outline-danger"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  Appointment
+                </button>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      </header>
+    </header>
 
-      <main>
-      <!-- hero -->
-      <div class="container-fluid hero px-4 text-center">
-        <div class="row h-100 gx-5">
-          <div
-            class="col h-100 d-flex align-items-center justify-content-center"
-          >
-            <!-- hero text -->
-            <div class="container px-4 heroText">
-              <div class="row gx-5">
-                <div
-                  class="col heroText text-start ms-3 animate__animated animate__fadeInUp"
-                >
-                  <div class="p-3 text-danger">
-                    Making Progress
-                    <h1>Hope</h1>
-                    saving the life of patient not someday,<br />but today
-                  </div>
-                  <button type="button" class="btn btn-outline-danger ms-3">
-                    Danger
-                  </button>
-                </div>
-              </div>
+    <!-- Main -->
+    <main>
+      <div class="hero container-fluid px-4 text-center">
+        <div class="row align-items-center h-100">
+          <div class="col">
+            <div class="heroText" style="padding-left: 4rem">
+              <div class="text-danger mb-3">Making Progress</div>
+              <h1 class="text-danger">Hope</h1>
+              <p class="text-danger">
+                Saving the life of patients <br />
+                not someday, but today
+              </p>
+              <button type="button" class="btn btn-outline-danger mt-3">
+                Learn More
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <!-- our vision -->
-      <section class="container p-0 ideaimg">
-        <div class="row gx-5">
-          <div class="col">
-            <div class="p-3">
-              <div class="container overflow-hidden ideaText text-center">
-                <div class="row g-2">
-                  <div class="col-6">
-                    <!-- idea img -->
-                    <div class="p-3 text-start">
-                      <img
-                        src="./image/IMG-20241025-WA0012.jpg"
-                        width="50%"
-                        height="20%"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                  </div>
-                  <!-- idea -->
-                  <div
-                    class="col-6"
-                    style="margin-top: 10%; margin-left: -20%; width: 60%"
-                  >
-                    <!-- text -->
-                    <div class="p-3 text-black text-start">
-                      <h3 class="text-black">OUR VIsion</h3>
-                      <p class="animate__animated animate__fadeInLeft">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Distinctio amet illum totam, sit aut soluta
-                        reprehenderit veritatis labore ipsum at quod, et
-                        voluptas culpa alias quas inventore dolor pariatur odio
-                        ab possimus omnis? Porro odio adipisci enim atque magni
-                        tempore beatae quibusdam odit nemo harum cumque, debitis
-                        perferendis. Perferendis esse quae labore perspiciatis
-                        placeat, vero doloremque iure architecto? Doloremque,
-                        totam nesciunt molestias distinctio inventore, aperiam
-                        laborum repellat non autem magnam minus hic ad illum qui
-                        obcaecati fugit ipsa, ab ut quidem reprehenderit aut
-                        libero iure quae? Quas quis facere eos, maiores expedita
-                        illum est eligendi ipsa sint exercitationem dignissimos
-                        alias!
-                      </p>
-                    </div>
-                  </div>
-                  <!-- img details -->
-                  <div class="col-6">
-                    <div class="p-3 bg-black text-start">
-                      Custom column padding
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- services -->
-      <section class="services" id="service">
-        <h2 class="text-center mb-5 mt-5">Services</h2>
-        <div
-          class="container d-flex justify-content-center"
 
-          style="margin-left: 15%"
-        >
-          <div class="row align-items-center g-2">
-            <!-- services-1 -->
-            <div class="col-4">
-              <div class="card" style="width: 10rem; border: none">
-                <img
-                  src="./image/Daycare.png"
-                  class="card-img-top rounded-circle"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick</p>
-                  <!-- <a href="#" class="btn btn-primary">Go here</a> -->
-                </div>
-              </div>
-            </div>
-            <!-- services-2 -->
-            <div class="col-4">
-              <div class="card" style="width: 10rem; border: none">
-                <img
-                  src="./image/OPD.png"
-                  class="card-img-top rounded-circle"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick</p>
-                  <!-- <a href="#" class="btn btn-primary">Go here</a> -->
-                </div>
-              </div>
-            </div>
-            <!-- services-3 -->
-            <div class="col-4">
-              <div class="card" style="width: 10rem; border: none">
-                <img
-                  src="./image/Routine-Lab.png"
-                  class="card-img-top rounded-circle"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick</p>
-                  <!-- <a href="#" class="btn btn-primary">Go here</a> -->
-                </div>
-              </div>
-            </div>
-            <!-- services-4 -->
-            <div class="col-4">
-              <div class="card" style="width: 10rem; border: none">
-                <img
-                  src="./image/Apheresis.png"
-                  class="card-img-top rounded-circle"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick</p>
-                  <!-- <a href="#" class="btn btn-primary">Go here</a> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- services-5 -->
-            <div class="col-4">
-              <div class="card" style="width: 10rem; border: none">
-                <img
-                  src="./image/Apheresis.png"
-                  class="card-img-top rounded-circle rounded-circle"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick</p>
-                  <!-- <a href="#" class="btn btn-primary">Go here</a> -->
-                </div>
-              </div>
-            </div>
-            <!-- services-6 -->
-            <div class="col-4">
-              <div class="card" style="width: 10rem; border: none">
-                <img
-                  src="./image/download.jpeg"
-                  class="card-img-top rounded-circle"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick</p>
-                  <!-- <a href="#" class="btn btn-primary">Go here</a> -->
-                </div>
-              </div>
-            </div>
+      <section class="container-fluid ideaimg py-5 about">
+        <h2 class="text-center text-danger" style="margin-top: 1rem" id="about">About</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <img
+              src="./image/IMG-20241025-WA0012.jpg"
+              alt="Our Vision"
+              class="img-fluid"
+              style="max-width: 40%; margin-left: 5rem; border-radius: 1rem"
+            />
+            <p style="margin-left: 5rem; margin-top: 1rem; color: wheat;">
+              name: Abul hadi <br />Lorem ipsum dolor sit <br />
+              amet consectetur adipisicing elit <br />
+            </p>
           </div>
-        </div>
-      </section>
-    
-    </main>
-    <!-- footer -->
-    <footer class="colorRed text-white" style="margin-top: 3%">
-      <div class="container">
-        <div class="row row-cols-2 row-cols-lg-3 g-4 g-lg-3">
-          <div class="col">
-            <!-- map -->
-            <div class="p-3">
-              <h5>Section title</h5>
-              <p>
-                Some placeholder content for the first column of the first row.
+          <div class="col-md-6 g-0">
+            <div style="margin-left: -5rem">
+              <h3 class="text-danger">Our Vision</h3>
+              <p class="animate__animated animate__fadeInLeft" style="color: wheat;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio amet illum totam, sit aut soluta reprehenderit
+                veritatis labore ipsum at quod, et voluptas culpa alias quas
+                inventore dolor pariatur odio ab possimus omnis?
               </p>
             </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3308.0189476223923!2d71.4892008757139!3d33.99204707317978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDU5JzMxLjQiTiA3McKwMjknMzAuNCJF!5e0!3m2!1sen!2s!4v1738828906339!5m2!1sen!2s"
-              style="border: 0; border-radius: 10px; margin-top: 3%"
-              width="200"
-              height="200"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
           </div>
+        </div>
+      </section>
 
-          <!-- service -->
-          <div class="col">
-            <div class="p-3">
-              <h5>Services</h5>
-              <div class="list-group" style="border: none">
-                <a
-                  href="#"
-                  class="list-group-item list-group-item-action text-white colorRed"
-                  style="border: none"
-                  aria-current="true"
-                >
-                  The current link item
-                </a>
-                <a
-                  href="#"
-                  class="list-group-item list-group-item-action text-white colorRed"
-                  style="border: none"
-                >
-                  A second link item
-                </a>
-                <a
-                  href="#"
-                  class="list-group-item list-group-item-action text-white colorRed"
-                  style="border: none"
-                >
-                  A third link item
-                </a>
-                <a
-                  href="#"
-                  class="list-group-item list-group-item-action text-white colorRed"
-                  style="border: none"
-                >
-                  A fourth link item
-                </a>
-                <a
-                  class="list-group-item list-group-item-action text-white colorRed"
-                  style="border: none"
-                >
-                  A link item
-                </a>
+      <section class="services py-5" id="service">
+        <h2 class="text-center text-danger mb-5">Services</h2>
+        <div class="container" style="color: wheat;">
+          <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            <div class="col">
+              <div class="card h-100 border-0" style="background-color: inherit;">
+                <img
+                  src="./image/Daycare.png"
+                  class="card-img-top rounded-circle mx-auto"
+                  alt="OPD"
+                  style="width: 150px; height: 150px"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">OPD</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0" style="background-color: inherit;">
+                <img
+                  src="./image/OPD.png"
+                  class="card-img-top rounded-circle mx-auto"
+                  alt="InPatient Care"
+                  style="width: 150px; height: 150px"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">InPatient Care</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0" style="background-color: inherit;">
+                <img
+                  src="./image/Routine-Lab.png"
+                  class="card-img-top rounded-circle mx-auto"
+                  alt="Diagnostic Lab"
+                  style="width: 150px; height: 150px"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Diagnostic Lab</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0" style="background-color: inherit;">
+                <img
+                  src="./image/Apheresis.png"
+                  class="card-img-top rounded-circle mx-auto"
+                  alt="Chemotherapy"
+                  style="width: 150px; height: 150px"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Chemotherapy</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0" style="background-color: inherit;">
+                <img
+                  src="./image/Apheresis.png"
+                  class="card-img-top rounded-circle mx-auto"
+                  alt="Transfusion"
+                  style="width: 150px; height: 150px"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Transfusion</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0" style="background-color: inherit;">
+                <img
+                  src="./image/parmacy.png"
+                  class="card-img-top rounded-circle mx-auto"
+                  alt="Pharmacy"
+                  style="width: 150px; height: 150px; border: 3px solid #eb0808a4"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Pharmacy</h5>
+                </div>
               </div>
             </div>
           </div>
-          <!--timings  -->
-          <div class="col">
-            <h5>Timings</h5>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item colorRed text-white">An item</li>
-              <li class="list-group-item colorRed text-white">A second item</li>
-              <li class="list-group-item colorRed text-white">A third item</li>
-              <li class="list-group-item colorRed text-white">A fourth item</li>
-              <li class="list-group-item colorRed text-white">
-                And a fifth one
-              </li>
-            </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <footer class="colorRed text-white py-5">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-3 g-4">
+            <div class="col">
+              <h5>Location</h5>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3308.0189476223923!2d71.4892008757139!3d33.99204707317978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDU5JzMxLjQiTiA3McKwMjknMzAuNCJF!5e0!3m2!1sen!2s!4v1738828906339!5m2!1sen!2s"
+                style="border: 0; border-radius: 10px"
+                width="100%"
+                height="200"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="col">
+              <h5>Services</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-white text-decoration-none">OPD</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >InPatient Care</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Diagnostic Lab</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Chemotherapy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5>Timings</h5>
+              <ul class="list-unstyled">
+                <li>Monday - Friday: 9:00 - 17:00</li>
+                <li>Saturday: 9:00 - 13:00</li>
+                <li>Sunday: Closed</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- footer2 -->
-    <footer class="text-center text-white colorRed">
-      <!-- links -->
-      <div class="container pt-2">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a
-            class="btn btn-outline-danger btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-facebook-f"></i>
-          </a>
+      </footer>
 
-          <!-- Twitter -->
+      <footer class="colorRed text-center text-white py-3">
+        <div class="container">
           <a
-            class="btn btn-outline-danger btn-floating m-1"
+            class="btn btn-outline-light btn-floating m-1"
             href="#!"
             role="button"
-            ><i class="fab fa-twitter"></i>
-          </a>
-
-          <!-- Google -->
+            ><i class="fab fa-facebook-f"></i
+          ></a>
           <a
-            class="btn btn-outline-danger btn-floating m-1"
+            class="btn btn-outline-light btn-floating m-1"
             href="#!"
             role="button"
-            ><i class="fab fa-google"></i>
-          </a>
-
-          <!-- Instagram -->
+            ><i class="fab fa-twitter"></i
+          ></a>
           <a
-            class="btn btn-outline-danger btn-floating m-1"
+            class="btn btn-outline-light btn-floating m-1"
             href="#!"
             role="button"
-            ><i class="fab fa-instagram"></i>
-          </a>
-
-          <!-- Linkedin -->
+            ><i class="fab fa-google"></i
+          ></a>
           <a
-            class="btn btn-outline-danger btn-floating m-1"
+            class="btn btn-outline-light btn-floating m-1"
             href="#!"
             role="button"
-            ><i class="fab fa-linkedin"></i>
-          </a>
-        </section>
-      </div>
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </footer>
     </footer>
 
-    <!-- navbar contact offcanvas -->
+    <!-- Offcanvas Contact -->
     <aside
-      class="offcanvas offcanvas-end bg-primary text-white"
+      style="
+        background-image: url(./image/scope.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+      class="offcanvas offcanvas-end"
       tabindex="-1"
       id="offcanvasRight"
       aria-labelledby="offcanvasRightLabel"
@@ -493,90 +381,92 @@
           aria-label="Close"
         ></button>
       </div>
-      <!-- off canvas body -->
       <div class="offcanvas-body">
-        <!--contact form  -->
         <form action="https://api.web3forms.com/submit" method="POST">
           <input
             type="hidden"
             name="access_key"
             value="fa80c278-3e54-4c3f-8dbf-91bddef0bdbc"
           />
-          <!-- name -->
-          <section>
-            <label for="name" class="mt-2">Name</label>
+          <div class="mb-3">
             <input
               type="text"
               name="name"
-              class="ms-2"
+              class="form-control"
               placeholder="Enter your name"
-              id="name"
-            /><br />
-          </section>
-          <!-- email -->
-          <section>
-            <label for="email" class="mt-2">Email</label>
+              required
+            />
+          </div>
+          <div class="mb-3">
             <input
               type="email"
               name="email"
-              class="ms-2"
+              class="form-control"
               placeholder="Enter your email"
-              id="email"
-            /><br />
-          </section>
-          <!-- phone -->
-          <section>
-            <label for="phone" class="mt-2">Phone</label>
+              required
+            />
+          </div>
+          <div class="mb-3">
             <input
               type="tel"
               name="phone"
-              class="ms-2"
+              class="form-control"
               placeholder="Enter your phone number"
-              id="phone"
-            /><br />
-          </section>
-          <!-- Appointment date -->
-          <section>
-            <label for="date" class="mt-2">Appointment Date</label>
-            <input type="date" name="date" class="ms-2" id="date" /><br />
-          </section>
-          <!-- Appointment time -->
-          <section>
-            <label for="time" class="mt-2">Appointment Time</label>
-            <input type="time" name="time" class="ms-2" id="time" /><br />
-          </section>
-          <!-- submit -->
-          <button type="submit" class="btn btn-outline-danger mt-3">
-            Submit
-          </button>
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Appointment Date</label>
+            <input
+              type="date"
+              name="date"
+              class="form-control"
+              id="date"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="time" class="form-label">Appointment Time</label>
+            <input
+              type="time"
+              name="time"
+              class="form-control"
+              id="time"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-outline-danger">Submit</button>
         </form>
         <hr />
         <h5>Contact Us</h5>
-        <p>
-          <a href="tel:+" target="_blank" class="text-white">
-            <i class="fa-solid fa-phone"></i>
-            +92 345 6789012
-          </a>
-        </p>
-        <p>
-          <a href="https://wa.me/" target="_blank" class="text-white">
-            <i class="fa-brands fa-whatsapp"></i>
-            +92 345 6789012
-          </a>
-        </p>
-        <p>
-          <a href="mailto:" target="_blank" class="text-white">
-            <i class="fa-solid fa-envelope"></i>
-            info@example.com
-          </a>
-        </p>
+        <div class="text-center">
+          <a
+            href="tel:+"
+            class="btn btn-outline-danger btn-floating m-1"
+            role="button"
+            ><i class="fas fa-phone"></i
+          ></a>
+          <a
+            href="https://wa.me/"
+            class="btn btn-outline-danger btn-floating m-1"
+            role="button"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a
+            href="mailto:"
+            class="btn btn-outline-danger btn-floating m-1"
+            role="button"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
       </div>
     </aside>
-  </body>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+  </body>
 </html>
